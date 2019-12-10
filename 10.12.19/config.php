@@ -12,11 +12,11 @@ function connect($host, $user, $pass, $dbname){
 }
 
 //päringu saatmine
-function query($sql, $link);
+function query($sql, $link){
     $result = mysqli_query($link, $sql);
-    if($result === false){
-        echo 'Problem with the query<br>'.sql.'<br><br>';
+    if($result===false){
+        echo 'Problem with the query<br>'.$sql.'<br><br>';
         return false;
     }
-    return true;
+    return $result;
 }

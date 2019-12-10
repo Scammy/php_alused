@@ -7,7 +7,7 @@ require_once 'db_fnk1.php';
 // lisame kasutusele anmebaasi serveri konfiguratsiooni
 require_once 'config.php';
 
-//ühendus ikt serveris oleva andmebasiga
+//  ühendus ikt serveris oleva andmebasiga
 $ikt = connect(HOST, USER, PASS, DBNAME);
 echo '<pre>';
 print_r($ikt);
