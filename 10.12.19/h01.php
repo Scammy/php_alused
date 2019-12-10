@@ -14,4 +14,7 @@ print_r($ikt);
 
 // tabeli ümbernimetamine
 $sql = 'RENAME TABLE `lehestet_db_php´.`TABLE1´´ TO `lehestet_db_php´.`koolid2015´ ';
+
+$sql'SELECT * FROM koolid2015';
 $result = query($sql, $ikt);
+echo '<pre>';
