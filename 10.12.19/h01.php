@@ -8,7 +8,7 @@ require_once 'db_fnk1.php';
 require_once 'config.php';
 
 //ühendus ikt serveris oleva andmebasiga
-$ikt = connect(HOST, Scammy, ActionX41, lehestet_db_php);
+$ikt = connect(HOST, USER, PASS, DBNAME);
 echo '<pre>';
 print_r($ikt);
 
